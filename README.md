@@ -20,4 +20,13 @@ terrraform plan #for dry run
 Terraform apply  
 
 
+
+[eksctl create cluster --name tp-cluster-1 --nodes 2 --node-type t2.micro --managed --region us-east-1        #another approach
+]
+
+
 ####################################            ISTIO SERVICE MESH             #################################################
+Websitge used https://istio.io/latest/docs/setup/getting-started/
+download istgio by using curl -L https://istio.io/downloadIstio | sh -
+mv -v istio-1.13.2 /opt/
+export PATH="$PATH:/opt/istio-1.13.2/bin" # export spath for istio 
