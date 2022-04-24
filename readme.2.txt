@@ -16,6 +16,20 @@ $Script to get the ip of external load balancer
 $for faking the domain of the application by injecting host header to the request 
 #curl -H "Host: go-demo-7.acme.com" "http://$INGRESS_HOST/version"
 #done 
-#
+#cat k8s/istio/split/exercise/app-0-0-2-g.yaml
+#diff k8s/istio/gateway/app/deployment.yaml k8s/istio/split/exercise/app-0-0-2-g.yaml
+#kubectl --namespace go-demo-7 apply --filename k8s/istio/split/exercise/app-0-0-2-g.yaml
+#kubectl --namespace go-demo-7 rollout status deployment go-demo-7-bg
+#for i in {1..100}; do
+#curl -H "Host: go-demo-7.acme.com" "http://$INGRESS_HOST/version"
+#done
 
-Gateway created external load balancer <deployemt creates < replica sets < replica sets creates pods 
+#kubectl --namespace go-demo-7 get deployments
+
+#kubectl --namespace go-demo-7 describe service go-demo-7
+
+#kubectl --namespace go-demo-7 describe virtualservice go-demo-7
+
+#kubectl --namespace go-demo-7 describe gateway go-demo-7
+
+#Gateway created external load balancer <deployemt creates < replica sets < replica sets creates pods 
