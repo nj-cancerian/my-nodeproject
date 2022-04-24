@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: go-demo-7
-        image: vfarcic/go-demo-7:0.0.1
+        image: nitjoshi/nodeapp:6
         imagePullPolicy: IfNotPresent
         env:
         - name: DB
