@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: go-demo-7
-        image: vfarcic/go-demo-7:0.0.2
+        image: vfarcic/go-demo-9:0.0.2
         imagePullPolicy: IfNotPresent
         env:
         - name: DB
@@ -67,7 +67,7 @@ spec:
     spec:
       containers:
       - name: go-demo-7
-        image: vfarcic/go-demo-7:0.0.2
+        image: vfarcic/go-demo-9:0.0.2
         imagePullPolicy: IfNotPresent
         env:
         - name: DB
